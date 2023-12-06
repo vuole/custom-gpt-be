@@ -7,7 +7,7 @@ const app = express();
 //Use cors
 const allowOrigins = [
   "http://localhost:3000",
-  "https://custom-gpt-fe.vercel.app" /** other domains if any */,
+  "https://trolyluat.vercel.app" /** other domains if any */,
 ];
 
 const corsOptions = {
