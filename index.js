@@ -7,19 +7,19 @@ const app = express();
 //Use cors
 const allowOrigins = [
   "http://localhost:3000",
-  "https://trolyluat.vercel.app" /** other domains if any */,
+  "https://tuvanluat.boxai.tech" /** other domains if any */,
 ];
 
 const corsOptions = {
   credentials: true,
   origin: true,
-  origin: (origin, callback) => {
-    if (allowOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
+  // origin: (origin, callback) => {
+  //   if (allowOrigins.indexOf(origin) !== -1) {
+  //     callback(null, true);
+  //   } else {
+  //     callback(new Error("Not allowed by CORS"));
+  //   }
+  // },
 };
 app.use(cors(corsOptions));
 
